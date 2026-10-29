@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Mandatory dark mode declaration per Modern Web Guidance -->
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0D1117" />
+
+  <title>Enzo Haruo de Torres Souza — AI Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfólio de Engenharia de Software e Inteligência Artificial de Enzo Haruo de Torres Souza. Arquiteturas Neuro-Simbólicas, Google Gemini API (Structured Outputs), Zero-Trust LGPD PII Masking e Orquestração Multi-Agente com RAG."
+  />
+
+  <!-- Open Graph / Executive Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Enzo Haruo de Torres Souza — AI Software Engineer" />
+  <meta
+    property="og:description"
+    content="Construindo Sistemas de Software Resilientes Integrados à Inteligência Artificial: Motores Híbridos, Structured JSON Outputs, Zero-Trust PII Masking e Multi-Agent RAG."
+  />
+  <meta property="og:url" content="https://eharuo2007-commits.github.io/" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ========================================================================
+       A) TOPBAR FIXA (GLASSMORPHISM)
+       ======================================================================== -->
+  <header class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <div class="brand-cluster">
+        <a href="#" class="brand-logo" aria-label="Enzo Haruo - AI Software Engineer Home">
+          <span>eharuo.dev</span>
+          <span class="slash">//</span>
+          <span class="role-tag">AI_ENGINEER</span>
+        </a>
+        <div class="status-pill" role="status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>System Status: Online</span>
+        </div>
+      </div>
+
+      <button
+        id="mobile-menu-toggle"
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Abrir navegação"
+        aria-expanded="false"
+        aria-controls="topbar-nav"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <nav id="topbar-nav" class="topbar-nav" aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#projetos" class="nav-link">Arquitetura &amp; Projetos</a></li>
+          <li><a href="#stack" class="nav-link">Stack Técnica</a></li>
+          <li><a href="#telemetria" class="nav-link">Telemetria</a></li>
+        </ul>
+        <a
+          href="https://github.com/eharuo2007-commits"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-github-top"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            />
+          </svg>
+          <span>GitHub (@eharuo2007-commits)</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ======================================================================
+         B) HERO SECTION (IMPACTO EXECUTIVO & TÉCNICO)
+         ====================================================================== -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <!-- Coluna Esquerda: Copy Executivo e CTAs -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>BACHARELADO EM TECNOLOGIA DA INFORMAÇÃO (UNIVESP) • TÉCNICO EM ADMINISTRAÇÃO (ETEC)</span>
+          </div>
+
+          <div class="hero-identity">
+            <span>ENZO HARUO DE TORRES SOUZA</span>
+            <span>—</span>
+            <span>AI SOFTWARE ENGINEER</span>
+          </div>
+
+          <h1 id="hero-heading" class="hero-title">
+            Construindo Sistemas de Software Resilientes Integrados à
+            <span class="highlight-ai">Inteligência Artificial.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Desenvolvimento de <strong>motores de decisão híbridos (Regras Determinísticas + LLMs)</strong>,
+            microsserviços com <strong>Structured JSON Outputs</strong>, proteção
+            <strong>Zero-Trust (LGPD PII Masking)</strong> e orquestração multi-agente com
+            <strong>RAG</strong>.
+          </p>
+
+          <!-- CTAs Principais -->
+          <div class="hero-cta-group">
+            <a href="#projetos" class="btn btn-primary">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-linejoin="round" />
+              </svg>
+              <span>Explorar Arquiteturas (3 Cases)</span>
+            </a>
+
+            <a
+              href="https://github.com/eharuo2007-commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              <span>Acessar GitHub Oficial</span>
+            </a>
+          </div>
+
+          <!-- CTAs Terciários -->
+          <div class="hero-tertiary-links" aria-label="Canais de Contato Direto">
+            <a
+              href="https://linkedin.com/in/enzoharuo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="tertiary-chip"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+              <span>LinkedIn (/in/enzoharuo)</span>
+            </a>
+
+            <div class="tertiary-chip">
+              <a href="mailto:eharuo2007@gmail.com">Contato: eharuo2007@gmail.com</a>
+              <button
+                id="btn-copy-email"
+                type="button"
+                class="btn-copy-inline"
+                title="Copiar endereço de e-mail"
+              >
+                Copiar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Terminal Interativo de Arquitetura -->
+        <aside class="terminal-card" aria-label="Terminal Interativo de Arquitetura">
+          <div class="terminal-header">
+            <div class="terminal-controls" aria-hidden="true">
+              <span class="win-dot red"></span>
+              <span class="win-dot yellow"></span>
+              <span class="win-dot green"></span>
+            </div>
+
+            <div class="terminal-tabs" role="tablist" aria-label="Arquivos do Terminal">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                class="term-tab active"
+                data-term-view="profile"
+              >
+                profile.json
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="term-tab"
+                data-term-view="architecture"
+              >
+                pipeline.json
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="term-tab"
+                data-term-view="healthcheck"
+              >
+                telemetry.json
+              </button>
+            </div>
+
+            <div class="terminal-actions">
+              <button id="btn-copy-terminal" type="button" class="btn-term-action">
+                Copiar JSON
+              </button>
+            </div>
+          </div>
+
+          <div class="terminal-body">
+            <pre id="hero-terminal-code" class="terminal-pre" aria-live="polite"></pre>
+          </div>
+
+          <div class="terminal-footer">
+            <span class="terminal-status-ok">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="hero-terminal-status">SCHEMA_VALIDATED • UTF-8 • 200 OK</span>
+            </span>
+            <span>gemini-3.8-flash // JSON Schema</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         TELEMETRIA OPERACIONAL & MÉTRICAS DE ARQUITETURA
+         ====================================================================== -->
+    <section id="telemetria" class="telemetry-strip" aria-label="Telemetria e Indicadores de Engenharia">
+      <div class="container telemetry-grid">
+        <div class="telemetry-kpi">
+          <div class="kpi-top">
+            <span class="kpi-label">MOTOR DETERMINÍSTICO</span>
+            <span class="kpi-badge green">SUB-MS SLA</span>
+          </div>
+          <div class="kpi-value">&lt; 1.2 ms</div>
+          <p class="kpi-desc">Latência das regras geográficas, financeiras e roteamento semântico antes do LLM.</p>
+        </div>
+
+        <div class="telemetry-kpi">
+          <div class="kpi-top">
+            <span class="kpi-label">CONTRATO DE SAÍDA IA</span>
+            <span class="kpi-badge blue">JSON SCHEMA</span>
+          </div>
+          <div class="kpi-value">100% Strict</div>
+          <p class="kpi-desc">Validação determinística via <code>response_format</code> sem alucinação estrutural.</p>
+        </div>
+
+        <div class="telemetry-kpi">
+          <div class="kpi-top">
+            <span class="kpi-label">ZERO-TRUST PRIVACY</span>
+            <span class="kpi-badge red">LGPD &amp; PCI-DSS</span>
+          </div>
+          <div class="kpi-value">0 PII Leaks</div>
+          <p class="kpi-desc">Sanitização de CPF, PAN e e-mail + hashes FNV-1a antes da fronteira de rede.</p>
+        </div>
+
+        <div class="telemetry-kpi">
+          <div class="kpi-top">
+            <span class="kpi-label">COBERTURA &amp; RESILIÊNCIA</span>
+            <span class="kpi-badge green">CI PASSING</span>
+          </div>
+          <div class="kpi-value">3 / 3 PROD</div>
+          <p class="kpi-desc">Suítes de testes automatizados (Node Test Runner / Vitest) + Exponential Backoff.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         C) SEÇÃO PRINCIPAL: ARQUITETURAS EM PRODUÇÃO (3 CORE PROJECTS)
+         ====================================================================== -->
+    <section id="projetos" class="section-block" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span>// PRODUCTION_SYSTEMS_ARCHITECTURE</span>
+            </div>
+            <h2 id="projects-heading" class="section-title">
+              Arquiteturas em Produção (3 Core Projects)
+            </h2>
+          </div>
+          <p class="section-subtitle">
+            Sistemas completos com código aberto, suítes de testes automatizados, persistência local auditável e contratos estritos de IA em execução no GitHub Pages.
+          </p>
+        </div>
+
+        <div class="projects-stack">
+          <!-- ================================================================
+               PROJETO 01: LogiEngine AI
+               ================================================================ -->
+          <article class="project-card" aria-labelledby="proj-01-title">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-index">PROJETO 01</span>
+                <span class="domain-badge">LOGISTICS &amp; SURGE PRICING ENGINE</span>
+              </div>
+              <div class="project-status-cluster">
+                <span class="status-tag prod">● v2.4 PROD</span>
+                <span class="status-tag tests">✓ 100% Automated Tests</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <!-- Coluna Esquerda: Detalhes de Engenharia -->
+              <div class="project-details">
+                <h3 id="proj-01-title" class="project-title">
+                  LogiEngine AI — Motor de Precificação Dinâmica, Roteirização e SLA Logístico
+                </h3>
+                <p class="project-summary">
+                  Microsserviço híbrido de última milha que combina cálculo geográfico determinístico por CEP (fórmula de Haversine + fator viário 1.34x e tarifação R$ 1,80/km) com inferência preditiva via Google Gemini API (<code>response_format</code> JSON Schema). Calcula Surge Pricing (1.0x a 2.5x), SLA dinâmico e recomendação de despacho com fallback resiliente e persistência em IndexedDB/SQL (<code>tb_logistics_quotations</code>).
+                </p>
+
+                <div class="arch-blocks">
+                  <div class="arch-block problem">
+                    <div class="arch-block-label">01 // Problema de Escala</div>
+                    <p class="arch-block-text">
+                      Motores estáticos de frete baseados apenas em distância linear falham em operações reais de alta frequência quando ocorrem tempestades severas, retenções arteriais e desequilíbrio agudo entre oferta e demanda de entregadores.
+                    </p>
+                  </div>
+
+                  <div class="arch-block neuro">
+                    <div class="arch-block-label">02 // Arquitetura Neuro-Simbólica</div>
+                    <p class="arch-block-text">
+                      A camada determinística (<code>pricingEngine.js</code>) calcula a geodésica Haversine com correção viária (<code>1.34x</code>) e tarifa base (<code>R$ 4,50 + R$ 1,80/km</code>), enquanto o modelo <code>gemini-3.8-flash</code> infere <code>surge_multiplier</code>, <code>estimated_sla_minutes</code> e alocação de modal sob JSON Schema estrito.
+                    </p>
+                  </div>
+
+                  <div class="arch-block highlights">
+                    <div class="arch-block-label">03 // Destaques de Engenharia</div>
+                    <p class="arch-block-text">
+                      Degradação graciosa com motor determinístico offline instantâneo, benchmark A/B em tempo real (Estático vs IA), telemetria persistida na tabela <code>tb_logistics_quotations</code> (IndexedDB/SQL) e suíte via Node Test Runner.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tech-tags" aria-label="Tecnologias do Projeto 01">
+                  <span class="tech-tag">JavaScript ES6+</span>
+                  <span class="tech-tag">Google Gemini API</span>
+                  <span class="tech-tag">Structured Outputs</span>
+                  <span class="tech-tag">Haversine Geo</span>
+                  <span class="tech-tag">IndexedDB SQL</span>
+                  <span class="tech-tag">Node Test Runner</span>
+                </div>
+              </div>
+
+              <!-- Coluna Direita: Mini-Visualizador Interativo com Abas -->
+              <div class="project-visualizer">
+                <div class="visualizer-header">
+                  <div class="visualizer-tabs" role="tablist" aria-label="Visualizador LogiEngine AI">
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                      class="vis-tab active"
+                      data-project="logiengine"
+                      data-pane="contract"
+                    >
+                      Contrato JSON Schema / Arquitetura
+                    </button>
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      class="vis-tab"
+                      data-project="logiengine"
+                      data-pane="overview"
+                    >
+                      Visão Geral
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-copy-json"
+                    data-copy-project="logiengine"
+                  >
+                    Copiar JSON
+                  </button>
+                </div>
+
+                <!-- Aba 1: Contrato JSON Schema / Payload -->
+                <div
+                  class="visualizer-pane active"
+                  data-project-pane="logiengine"
+                  data-pane-id="contract"
+                >
+                  <div class="schema-subtoolbar">
+                    <span>POST /v1beta/interactions (response_format)</span>
+                    <div class="schema-mode-pills">
+                      <button
+                        type="button"
+                        class="schema-pill active"
+                        data-project-schema="logiengine"
+                        data-mode="payload"
+                      >
+                        Payload Real (PROD)
+                      </button>
+                      <button
+                        type="button"
+                        class="schema-pill"
+                        data-project-schema="logiengine"
+                        data-mode="schema"
+                      >
+                        Strict JSON Schema
+                      </button>
+                    </div>
+                  </div>
+                  <pre id="code-logiengine" class="code-viewport"></pre>
+                </div>
+
+                <!-- Aba 2: Visão Geral de Arquitetura -->
+                <div
+                  class="visualizer-pane"
+                  data-project-pane="logiengine"
+                  data-pane-id="overview"
+                >
+                  <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 01</span>
+                      <div class="step-info">
+                        <strong>Georreferenciamento Determinístico por CEP</strong>
+                        <span>Haversine Geodesic * 1.34x Road Factor + R$ 1,80/km</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 02</span>
+                      <div class="step-info">
+                        <strong>Inferência Estruturada Google Gemini API</strong>
+                        <span>Surge Pricing (1.0x–2.5x), SLA Dinâmico &amp; Bottleneck Analysis</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 03</span>
+                      <div class="step-info">
+                        <strong>Fallback Offline &amp; Persistência SQL Local</strong>
+                        <span>Gravação assíncrona em tb_logistics_quotations + Export CSV/JSON</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="metrics-mini-grid">
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">1.0x - 2.5x</span>
+                      <span class="mini-metric-lbl">Surge Range</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">1.34x</span>
+                      <span class="mini-metric-lbl">Fator Viário</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">100%</span>
+                      <span class="mini-metric-lbl">Schema Valid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="footer-storage-meta">
+                <span>Persistence Target:</span>
+                <code>IndexedDB // tb_logistics_quotations</code>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://github.com/eharuo2007-commits/delivery-logistics-ai-engine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-repo"
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  <span>Ver Código no GitHub</span>
+                </a>
+
+                <a
+                  href="https://eharuo2007-commits.github.io/delivery-logistics-ai-engine/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-demo"
+                >
+                  <span>Live Demo (GitHub Pages)</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================================================================
+               PROJETO 02: FinGuard AI
+               ================================================================ -->
+          <article class="project-card" aria-labelledby="proj-02-title">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-index">PROJETO 02</span>
+                <span class="domain-badge">FINOPS, CYBERSECURITY &amp; ANTI-FRAUD</span>
+              </div>
+              <div class="project-status-cluster">
+                <span class="status-tag prod">● v2.4 PROD</span>
+                <span class="status-tag tests">✓ 100% Automated Tests</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <!-- Coluna Esquerda: Detalhes de Engenharia -->
+              <div class="project-details">
+                <h3 id="proj-02-title" class="project-title">
+                  FinGuard AI — Conciliação Financeira, PII Masking (LGPD) e Detecção de Fraudes
+                </h3>
+                <p class="project-summary">
+                  Gateway Zero-Trust de auditoria financeira para plataformas de delivery. Sanitiza dados sensíveis em tempo real (CPF, e-mail, PAN de cartão via PCI-DSS truncation e hashes FNV-1a anti-Sybil) antes da chamada ao LLM. Combina 4 políticas determinísticas (&lt;1ms para estornos duplicados no mesmo minuto e abuso de cupons) com análise preditiva via Gemini API, Retry Pattern com Exponential Backoff + Jitter e banco local <code>tb_finops_audit_logs</code>.
+                </p>
+
+                <div class="arch-blocks">
+                  <div class="arch-block problem">
+                    <div class="arch-block-label">01 // Problema de Escala</div>
+                    <p class="arch-block-text">
+                      Auditar milhares de solicitações de reembolso, cupons promocionais e repasses a restaurantes exige prevenção instantânea contra ataques Sybil/Replay sem jamais expor dados pessoais brutos (LGPD Art. 46 / PCI-DSS) para APIs externas de IA.
+                    </p>
+                  </div>
+
+                  <div class="arch-block neuro">
+                    <div class="arch-block-label">02 // Arquitetura Neuro-Simbólica</div>
+                    <p class="arch-block-text">
+                      O módulo <code>piiMasker.js</code> mascara CPF/E-mail/PAN preservando correlação via hashes determinísticos <code>FNV-1a</code>; <code>deterministicRules.js</code> intercepta duplicidades no mesmo minuto (<code>&lt;1ms</code>) e o Gemini classifica anomalias sob contrato estrito.
+                    </p>
+                  </div>
+
+                  <div class="arch-block highlights">
+                    <div class="arch-block-label">03 // Destaques de Engenharia</div>
+                    <p class="arch-block-text">
+                      Gatekeeper <code>verifyZeroPIIExposure()</code> com bloqueio imediato de vazamento, resiliência de rede via <code>retryWithBackoff.js</code> (Exponential Backoff + Full Jitter) e exportação de auditoria SQL (<code>tb_finops_audit_logs</code>).
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tech-tags" aria-label="Tecnologias do Projeto 02">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Google Gemini API</span>
+                  <span class="tech-tag">LGPD PII Masking</span>
+                  <span class="tech-tag">Zero-Trust Gateway</span>
+                  <span class="tech-tag">Exponential Backoff</span>
+                  <span class="tech-tag">Cybersecurity</span>
+                </div>
+              </div>
+
+              <!-- Coluna Direita: Mini-Visualizador Interativo com Abas -->
+              <div class="project-visualizer">
+                <div class="visualizer-header">
+                  <div class="visualizer-tabs" role="tablist" aria-label="Visualizador FinGuard AI">
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                      class="vis-tab active"
+                      data-project="finguard"
+                      data-pane="contract"
+                    >
+                      Contrato JSON Schema / Arquitetura
+                    </button>
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      class="vis-tab"
+                      data-project="finguard"
+                      data-pane="overview"
+                    >
+                      Visão Geral
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-copy-json"
+                    data-copy-project="finguard"
+                  >
+                    Copiar JSON
+                  </button>
+                </div>
+
+                <!-- Aba 1: Contrato JSON Schema / Payload -->
+                <div
+                  class="visualizer-pane active"
+                  data-project-pane="finguard"
+                  data-pane-id="contract"
+                >
+                  <div class="schema-subtoolbar">
+                    <span>Zero-Trust Sanitized Payload &amp; Audit Contract</span>
+                    <div class="schema-mode-pills">
+                      <button
+                        type="button"
+                        class="schema-pill active"
+                        data-project-schema="finguard"
+                        data-mode="payload"
+                      >
+                        Payload Real (PROD)
+                      </button>
+                      <button
+                        type="button"
+                        class="schema-pill"
+                        data-project-schema="finguard"
+                        data-mode="schema"
+                      >
+                        Strict JSON Schema
+                      </button>
+                    </div>
+                  </div>
+                  <pre id="code-finguard" class="code-viewport"></pre>
+                </div>
+
+                <!-- Aba 2: Visão Geral de Arquitetura -->
+                <div
+                  class="visualizer-pane"
+                  data-project-pane="finguard"
+                  data-pane-id="overview"
+                >
+                  <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 01</span>
+                      <div class="step-info">
+                        <strong>Zero-Trust PII Masker &amp; Gatekeeper</strong>
+                        <span>Redação LGPD + PCI-DSS Truncation + Tokens FNV-1a</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 02</span>
+                      <div class="step-info">
+                        <strong>Motor Determinístico FinOps (&lt;1ms)</strong>
+                        <span>4 Políticas: Duplicidade no Mesmo Minuto, Teto de Estorno, Sybil &amp; GMV</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 03</span>
+                      <div class="step-info">
+                        <strong>Gemini Fraud Audit + Exponential Backoff</strong>
+                        <span>Score 0-100, Explainability Report &amp; Persistência SQL</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="metrics-mini-grid">
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">0 Bytes</span>
+                      <span class="mini-metric-lbl">PII Exposto</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">&lt; 1ms</span>
+                      <span class="mini-metric-lbl">Rules Engine</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">FNV-1a</span>
+                      <span class="mini-metric-lbl">Anti-Sybil Hash</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="footer-storage-meta">
+                <span>Persistence Target:</span>
+                <code>IndexedDB &amp; SQL Dump // tb_finops_audit_logs</code>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://github.com/eharuo2007-commits/finops-fraud-guardian-ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-repo"
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  <span>Ver Código no GitHub</span>
+                </a>
+
+                <a
+                  href="https://eharuo2007-commits.github.io/finops-fraud-guardian-ai/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-demo"
+                >
+                  <span>Live Demo (GitHub Pages)</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ================================================================
+               PROJETO 03: Nexus Orchestrator
+               ================================================================ -->
+          <article class="project-card" aria-labelledby="proj-03-title">
+            <div class="project-card-header">
+              <div class="project-header-left">
+                <span class="project-index">PROJETO 03</span>
+                <span class="domain-badge">MULTI-AGENT ORCHESTRATION &amp; RAG</span>
+              </div>
+              <div class="project-status-cluster">
+                <span class="status-tag prod">● v2.4 PROD</span>
+                <span class="status-tag tests">✓ 100% Automated Tests</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <!-- Coluna Esquerda: Detalhes de Engenharia -->
+              <div class="project-details">
+                <h3 id="proj-03-title" class="project-title">
+                  Nexus Orchestrator — Plataforma Multi-Agente com RAG e Roteamento Semântico
+                </h3>
+                <p class="project-summary">
+                  Orquestrador omnichannel que classifica intenções de usuários e parceiros via Semantic Router (<code>SUPPORT_LOGISTICS</code>, <code>FINOPS_DISPUTES</code>, <code>API_INTEGRATION</code>), recupera políticas técnicas de uma base de conhecimento documental (RAG) para mitigar alucinações com citação de fontes e fornece painel Split-View de observabilidade com inspeção de tokens, latência e guardrails.
+                </p>
+
+                <div class="arch-blocks">
+                  <div class="arch-block problem">
+                    <div class="arch-block-label">01 // Problema de Escala</div>
+                    <p class="arch-block-text">
+                      Atendimentos críticos de restaurantes parceiros, entregadores e desenvolvedores sofrem com alucinações de políticas operacionais quando enviados a um único prompt monolítico sem isolamento de contexto e sem aterramento documental.
+                    </p>
+                  </div>
+
+                  <div class="arch-block neuro">
+                    <div class="arch-block-label">02 // Arquitetura Neuro-Simbólica</div>
+                    <p class="arch-block-text">
+                      O <code>semanticRouter.ts</code> calcula probabilidades via distribuição Softmax calibrada ($T=2.8$) para acionar o sub-agente especialista correto (<em>Atlas</em>, <em>Ledger</em> ou <em>Pulse</em>), injetando os <code>topK = 3</code> manuais recuperados pelo motor RAG (<code>ragService.ts</code>).
+                    </p>
+                  </div>
+
+                  <div class="arch-block highlights">
+                    <div class="arch-block-label">03 // Destaques de Engenharia</div>
+                    <p class="arch-block-text">
+                      Citação estrita de documentos (<code>DOC-LOG-101</code>, <code>DOC-FIN-201</code>, <code>DOC-API-301</code>), painel Raio-X Split-View com telemetria de latência por estágio, contagem de tokens/custo e persistência em <code>tb_nexus_orchestrator_logs</code>.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tech-tags" aria-label="Tecnologias do Projeto 03">
+                  <span class="tech-tag">Semantic Router</span>
+                  <span class="tech-tag">RAG Architecture</span>
+                  <span class="tech-tag">Multi-Agent Systems</span>
+                  <span class="tech-tag">Google Gemini API</span>
+                  <span class="tech-tag">LLM Observability</span>
+                  <span class="tech-tag">JSON Schema</span>
+                </div>
+              </div>
+
+              <!-- Coluna Direita: Mini-Visualizador Interativo com Abas -->
+              <div class="project-visualizer">
+                <div class="visualizer-header">
+                  <div class="visualizer-tabs" role="tablist" aria-label="Visualizador Nexus Orchestrator">
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                      class="vis-tab active"
+                      data-project="nexus"
+                      data-pane="contract"
+                    >
+                      Contrato JSON Schema / Arquitetura
+                    </button>
+                    <button
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                      class="vis-tab"
+                      data-project="nexus"
+                      data-pane="overview"
+                    >
+                      Visão Geral
+                    </button>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-copy-json"
+                    data-copy-project="nexus"
+                  >
+                    Copiar JSON
+                  </button>
+                </div>
+
+                <!-- Aba 1: Contrato JSON Schema / Payload -->
+                <div
+                  class="visualizer-pane active"
+                  data-project-pane="nexus"
+                  data-pane-id="contract"
+                >
+                  <div class="schema-subtoolbar">
+                    <span>Multi-Agent Grounded Output &amp; Telemetry</span>
+                    <div class="schema-mode-pills">
+                      <button
+                        type="button"
+                        class="schema-pill active"
+                        data-project-schema="nexus"
+                        data-mode="payload"
+                      >
+                        Payload Real (PROD)
+                      </button>
+                      <button
+                        type="button"
+                        class="schema-pill"
+                        data-project-schema="nexus"
+                        data-mode="schema"
+                      >
+                        Strict JSON Schema
+                      </button>
+                    </div>
+                  </div>
+                  <pre id="code-nexus" class="code-viewport"></pre>
+                </div>
+
+                <!-- Aba 2: Visão Geral de Arquitetura -->
+                <div
+                  class="visualizer-pane"
+                  data-project-pane="nexus"
+                  data-pane-id="overview"
+                >
+                  <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 01</span>
+                      <div class="step-info">
+                        <strong>Semantic Router (Softmax Temperature T=2.8)</strong>
+                        <span>SUPPORT_LOGISTICS | FINOPS_DISPUTES | API_INTEGRATION</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 02</span>
+                      <div class="step-info">
+                        <strong>Motor RAG Híbrido (9 Manuais de SLA &amp; API)</strong>
+                        <span>Injeção Top-K com score de relevância e citação obrigatória</span>
+                      </div>
+                    </div>
+                    <div class="pipeline-step">
+                      <span class="step-num">STAGE 03</span>
+                      <div class="step-info">
+                        <strong>Sub-Agente Especialista + Observabilidade Raio-X</strong>
+                        <span>Inspeção de tokens, latência desagregada e tb_nexus_orchestrator_logs</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="metrics-mini-grid">
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">3 Agents</span>
+                      <span class="mini-metric-lbl">Atlas / Ledger / Pulse</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">9 Docs</span>
+                      <span class="mini-metric-lbl">Corpus RAG</span>
+                    </div>
+                    <div class="mini-metric">
+                      <span class="mini-metric-val">~1.2ms</span>
+                      <span class="mini-metric-lbl">Router Latency</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="footer-storage-meta">
+                <span>Persistence Target:</span>
+                <code>IndexedDB // tb_nexus_orchestrator_logs</code>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://github.com/eharuo2007-commits/omnichannel-rag-orchestrator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-repo"
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                  </svg>
+                  <span>Ver Código no GitHub</span>
+                </a>
+
+                <a
+                  href="https://eharuo2007-commits.github.io/omnichannel-rag-orchestrator/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-demo"
+                >
+                  <span>Live Demo (GitHub Pages)</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         D) SEÇÃO: MATRIZ DE COMPETÊNCIAS DE ENGENHARIA (TECH STACK)
+         ====================================================================== -->
+    <section id="stack" class="section-block" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span>// ENGINEERING_COMPETENCY_MATRIX</span>
+            </div>
+            <h2 id="stack-heading" class="section-title">
+              Matriz de Competências de Engenharia (Tech Stack)
+            </h2>
+          </div>
+          <p class="section-subtitle">
+            Domínio técnico estruturado em 4 pilares para construção de sistemas críticos, APIs determinísticas e integração segura com modelos fundacionais.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Coluna 1: Engenharia de IA & LLMs -->
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="stack-col-icon ai">AI</span>
+              <h3 class="stack-col-title">Engenharia de IA &amp; LLMs</h3>
+            </div>
+            <ul class="stack-list">
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Google AI Studio &amp; Gemini API</span>
+                  <span class="stack-item-level">CORE</span>
+                </div>
+                <span class="stack-item-desc">Integração via SDK oficial (@google/genai) e Interactions API.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Structured Outputs (JSON Schema)</span>
+                  <span class="stack-item-level">STRICT</span>
+                </div>
+                <span class="stack-item-desc">Contratos determinísticos tipados com validação em runtime.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Prompt Engineering Avançado</span>
+                  <span class="stack-item-level">PROD</span>
+                </div>
+                <span class="stack-item-desc">System Instructions modulares, Few-Shot e calibragem de decisão.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>RAG &amp; Orquestração de Agentes</span>
+                  <span class="stack-item-level">MULTI-AGENT</span>
+                </div>
+                <span class="stack-item-desc">Semantic Routing (Softmax), recuperação Top-K e citação de fontes.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Desenvolvimento & Backend -->
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="stack-col-icon backend">BE</span>
+              <h3 class="stack-col-title">Desenvolvimento &amp; Backend</h3>
+            </div>
+            <ul class="stack-list">
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>JavaScript / TypeScript</span>
+                  <span class="stack-item-level">ES6+ / NODE</span>
+                </div>
+                <span class="stack-item-desc">Node.js, ES Modules, Express, tipagem estrita e alta performance.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Python &amp; Java</span>
+                  <span class="stack-item-level">BACKEND</span>
+                </div>
+                <span class="stack-item-desc">Automação, processamento de dados, orientação a objetos e serviços.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Kotlin (Android / Compose)</span>
+                  <span class="stack-item-level">MOBILE</span>
+                </div>
+                <span class="stack-item-desc">Desenvolvimento nativo Android moderno com Jetpack Compose.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>C / C# &amp; APIs REST</span>
+                  <span class="stack-item-level">SYSTEMS</span>
+                </div>
+                <span class="stack-item-desc">Fundamentos de algoritmos, estruturas de dados e contratos HTTP/REST.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Dados, Persistência & DevOps -->
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="stack-col-icon data">DB</span>
+              <h3 class="stack-col-title">Dados, Persistência &amp; DevOps</h3>
+            </div>
+            <ul class="stack-list">
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>SQL &amp; Modelagem Relacional</span>
+                  <span class="stack-item-level">SQLITE / SQL</span>
+                </div>
+                <span class="stack-item-desc">Schemas transacionais, índices secundários e dumps de auditoria.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>IndexedDB &amp; Storage Híbrido</span>
+                  <span class="stack-item-level">CLIENT DB</span>
+                </div>
+                <span class="stack-item-desc">Persistência assíncrona resiliente com espelhamento síncrono.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Git, GitHub &amp; Linux</span>
+                  <span class="stack-item-level">DEVOPS</span>
+                </div>
+                <span class="stack-item-desc">Versionamento semântico, ambientes POSIX e deploy em GitHub Pages.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Testes Automatizados</span>
+                  <span class="stack-item-level">100% PASS</span>
+                </div>
+                <span class="stack-item-desc">Node.js Test Runner e Vitest para validação E2E e contratos de IA.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 4: Arquitetura & Segurança -->
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="stack-col-icon sec">SEC</span>
+              <h3 class="stack-col-title">Arquitetura &amp; Segurança</h3>
+            </div>
+            <ul class="stack-list">
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Clean Architecture</span>
+                  <span class="stack-item-level">MODULAR</span>
+                </div>
+                <span class="stack-item-desc">Separação estrita entre Domain, Services, Storage e UI.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Retry Backoff &amp; Jitter</span>
+                  <span class="stack-item-level">RESILIENCE</span>
+                </div>
+                <span class="stack-item-desc">Mitigação de HTTP 429/503 com espera exponencial e Full Jitter.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Graceful Degradation / Fallback</span>
+                  <span class="stack-item-level">HIGH AVAIL</span>
+                </div>
+                <span class="stack-item-desc">Continuidade operacional determinística mesmo sem conectividade LLM.</span>
+              </li>
+              <li class="stack-item">
+                <div class="stack-item-name">
+                  <span>Blue Team &amp; LGPD PII Masking</span>
+                  <span class="stack-item-level">ZERO-TRUST</span>
+                </div>
+                <span class="stack-item-desc">Sanitização de CPF/PAN/E-mail e hashes FNV-1a antes da inferência.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       E) RODAPÉ TÉCNICO
+       ======================================================================== -->
+  <footer class="footer-tech" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>eharuo.dev // Enzo Haruo de Torres Souza</h3>
+          <p>AI Software Engineer • Bacharelado em TI (UNIVESP) • Técnico em Administração (ETEC)</p>
+        </div>
+
+        <div class="footer-links">
+          <a
+            href="https://github.com/eharuo2007-commits"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link-btn"
+          >
+            <span>GitHub (@eharuo2007-commits)</span>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/enzoharuo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link-btn"
+          >
+            <span>LinkedIn (/in/enzoharuo)</span>
+          </a>
+
+          <a href="mailto:eharuo2007@gmail.com" class="footer-link-btn">
+            <span>eharuo2007@gmail.com</span>
+          </a>
+
+          <button id="btn-copy-portfolio" type="button" class="btn-copy-portfolio">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copiar Link do Portfólio</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Enzo Haruo de Torres Souza. Arquitetura Brutalista Técnica em Dark Mode (#0D1117).</span>
+        <span>Hospedado no GitHub Pages • Zero Dependências Quebradas • 100% Responsivo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="toast-notification" role="status" aria-live="polite">
+    <span class="status-dot" aria-hidden="true"></span>
+    <span id="toast-text">Copiado para a área de transferência!</span>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
